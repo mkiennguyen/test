@@ -24,3 +24,5 @@ app.use(express.urlencoded({ extended: true }));
 app.listen(PORT, () => {
   console.log(`server is running at address:http://localhost:${PORT}`);
 });
+
+console.log("hello world");
