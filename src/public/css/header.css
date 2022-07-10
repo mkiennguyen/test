@@ -1,0 +1,28 @@
+.header {
+  height: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+}
+.home__mainNavText {
+  text-decoration: none;
+  color: #748da6;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.header__user {
+  margin: 0 2rem;
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+}
+
+.header__user > img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 30rem;
+}

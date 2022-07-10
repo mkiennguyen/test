@@ -3,15 +3,99 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(45deg, #faf3e3, #d9d7f1) no-repeat top fixed;
 }
 
 .form {
-  max-width: 50rem;
-  margin: 10rem auto;
+  font-size: 1.6rem;
   padding: 3rem;
+  border-radius: 0.8rem;
+  margin: 6rem auto;
+  box-sizing: 0.6rem 0.6rem 1rem rgb(229, 229, 229);
+  max-width: 42rem;
+  background-color: white;
+  text-transform: capitalize;
+  color: #959595;
+  font-weight: 600;
+}
+
+.form__title {
+  font-size: 3.8rem;
+  color: #1b1a17;
+}
+
+.form__field {
+  padding: 0.8rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.form__field > input {
+  margin: 0.5rem 0 0;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  position: relative;
+  font-size: 1.5rem;
+}
+.form__field > input:focus {
+  border-bottom: 0.3rem solid #b2b1b9;
+}
+
+.form__supportUser {
+  margin: 0.6rem 0 0;
+}
+
+.form__supportUser > a {
+  text-decoration: none;
+  color: #069a8e;
+  font-size: 1.4rem;
+}
+.form__supportUser > a:hover {
+  text-decoration: underline;
+}
+
+.form__buttonSubmmitBox {
+  margin: 1.8rem 0 0;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.form__buttonSubmmit {
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 1.2rem 1.8rem;
+  background-color: #9a86a4;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 550;
+}
+
+.welcome {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__errorBox {
+  font-size: 1rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.form__error {
+  color: rgb(255, 60, 60);
+  padding: 0.5rem 0 0;
+}
+
+.form__nofSuccess {
+  color: #4e9f3d;
 }

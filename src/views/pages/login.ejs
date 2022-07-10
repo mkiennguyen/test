@@ -1,0 +1,42 @@
+<form action="/login" method="POST">
+  <div class="form signup">
+    <h2 class="form__title"><%= template %></h2>
+
+    <div class="form__errorBox">
+      <% loginErrors.forEach(function(error){ %>
+      <div class="form__error">
+        
+       <h2>
+         <%= error.msg %></div>
+      </h2> 
+
+      <% }); %>
+    </div>
+
+    <div class="form__field">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your username or password"
+        name="usernameEmail"
+      />
+    </div>
+
+    <div class="form__field">
+      <label for="password">Password </label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Your password"
+        name="password"
+      />
+    </div>
+    <div class="form__supportUser">
+      <a href="/signup">Create a account</a>
+    </div>
+    <div class="form__buttonSubmmitBox">
+      <button type="submit" class="form__buttonSubmmit">Login</button>
+    </div>
+  </div>
+</form>

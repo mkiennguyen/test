@@ -7,11 +7,13 @@ const dbName = "form";
 
 const db = `mongodb+srv://${user}:${password}@cluster0.e5nv6.mongodb.net/?retryWrites=true&w=majority`;
 
-const connectDatabase = () => {
-  mongoose
-    .connect(db)
-    .then((data) => console.log("connect db success"))
-    .catch((err) => console.log(err));
+const connectDatabase = async () => {
+  try {
+    const data = await mongoose.connect(db);
+    console.log("Mongodb connected!");
+  } catch (err) {
+    console.log(`CONNECT MONGO SERVER FAILED : ${err}`);
+  }
 };
 
 module.exports = connectDatabase;

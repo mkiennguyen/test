@@ -1,0 +1,44 @@
+.main {
+  min-height: 80vh;
+  padding: 3rem;
+}
+
+.main__posts {
+  padding: 1.8rem 0 0;
+}
+.post__box {
+  margin: 0 0 3.5rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  animation: leftToRight 1s;
+  display: inline-block;
+  max-width: 75rem;
+  width: 100%;
+  height: 25rem;
+  transition: all 0.4s;
+  box-shadow: 0.6rem 0.6rem 1.5rem rgb(188, 188, 188);
+}
+.post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.post__img {
+  width: 36%;
+  height: inherit;
+  object-fit: cover;
+}
+.post__content {
+  width: 64%;
+  padding: 0 0 0 2rem;
+}
+.post__contentTitle {
+  padding: 0.5rem 0 0;
+  text-align: left;
+  font-size: 2.1rem;
+}
+
+.post__box:hover {
+  margin: 0 0 3.5rem 3rem;
+}
